@@ -1,0 +1,263 @@
+#khealthPage{
+    width: 100vw;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: -100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    transition: all 0.6s ease;
+}
+#khealthPage.slideIn {
+    left: 0vw;
+}
+#khealthPageHero{
+    width: 100vw;
+    height: 100vh;
+    background-color: #586470;
+    
+}
+#khealthPageHero header {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    left: 50px;
+    bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+#khealthPageHero header > h1 {
+    width: 100%;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #ffffff;
+}
+#khealthPageHero header > h2{
+    width: 100%;
+    font-family: 'OpalineRegular';
+    font-size: 20px;
+    color: #ffffff;
+}
+#khealthLaptop{
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(../assets/images/khealthBG.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width:1330px) {
+    #khealthLaptop{
+        background-position: -80px 0;
+    }
+}
+@media only screen and (max-width:1110px) {
+    #khealthLaptop{
+        background-position: -80px 0;
+    }
+}
+@media only screen and (max-width:760px) {
+    #khealthLaptop{
+        background-position: -200px 0;
+    }
+}
+@media only screen and (max-width:480px) {
+    #khealthLaptop{
+        background-position: -250px 0;
+        width: 100%;
+        height: 80%;
+    }
+    #khealthPageHero header {
+        left: 50px;
+        bottom: 50px;
+    }
+}
+.testingBox {
+    width: 78vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 3;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+#khealthIntro h3 {
+    width: 280px;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #586470;
+    border-bottom: 2px solid #586470;
+    margin-top:90px;
+    margin-bottom: 90px;
+}
+#khealthIntro p {
+    width: 75vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 100;
+    margin-top: 30px;
+    color: #586470;
+}
+@media only screen and (max-width:600px){
+    #khealthIntro p,
+    #khealthStyleGuide > p,
+    #khealthPrototype > p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+#khealthIntro span {
+    font-weight: 600;
+}
+
+#khealthStyleGuide,
+#khealthPrototype,
+#dashPrototypeAdmin {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#khealthStyleGuide > p,
+#khealthPrototype > p{
+    width: 85%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #586470;
+    text-align: left;
+}
+#khealthStyleGuide > h3 {
+    width: 81%;
+}
+#khealthStyleGuideImg {
+    width: 810px;
+    height: 810px;
+    background-image: url(../assets/images/KhealthStyleGuide.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1608px) {
+    #khealthStyleGuide{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 25px;
+    }
+}
+@media only screen and (max-width:1064px) {
+    #khealthStyleGuideImg{
+       width: 405px;
+       height:2400px;
+       background-image: url(../assets/images/KhealthStyleGuideV.png);
+    }
+    #khealthPrototype{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:550px) {
+    #khealthStyleGuideImg{
+       width: 320px;
+       height:2000px;
+    }
+    #khealthStyleGuide > h3,
+    #khealthStyleGuide > p {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    #khealthStyleGuide > h3{
+        font-size: 40px;
+        width: 220px; 
+    }
+    #khealthStyleGuide > p {
+        width: 80%;
+        font-size: 14px;
+        line-height: 18px; 
+        text-align: center;
+    }
+}
+
+
+/* Prototype */
+#khealthPrototype_1 figure,
+#khealthPrototype_2 figure,
+#khealthPrototype_3 figure,
+#khealthPrototype_4 figure {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#khealthPrototype_1 figure{
+    background-image: url(../assets/images/KhealthMockUp_1.png);
+}
+#khealthPrototype_2 figure{
+    background-image: url(../assets/images/KhealthMockUp_2.png);
+}
+#khealthPrototype_3 figure{
+    background-image: url(../assets/images/KhealthMockUp_3.png);
+}
+#khealthPrototype_4 figure{
+    background-image: url(../assets/images/KhealthMockUp_4.png);
+}
+
+#khealthPrototype button,
+#dashPrototypeAdmin button {
+    width: 200px;
+    height: 55px;
+
+    background-color: #fff;
+    border: 2px solid #586470;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+#khealthPrototype button a,
+#dashPrototypeAdmin button a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'OpalineRegular';
+    color: #586470;
+    font-size: 22px;
+}
+
+#khealthPage .testingBox {
+    width: 78vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 3;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}

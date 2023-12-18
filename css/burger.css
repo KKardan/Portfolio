@@ -1,0 +1,172 @@
+
+
+/* BODY */
+body.menuActive {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* BURGER */
+#burger {
+    width: 50px;
+    height: 50px;
+    background-color: #586470;
+    border: 1px solid #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: all 0.6s ease;
+    overflow: hidden;
+}
+/* BURGER MIDDLE LINE */
+.burgerLine {
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.6s ease;
+}
+/* BURGER TOP/BOTTOM LINE */
+.burgerLine::before,
+.burgerLine::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.6s ease;
+}
+.burgerLine::before {
+    transform: translateY(-10px);
+}
+.burgerLine::after {
+    transform: translateY(10px);
+}
+
+/* BURGER ANIMATION */
+#burger.open .burgerLine {
+    transform: translateX(-50px);
+    background-color: transparent;
+}
+#burger.open .burgerLine::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+#burger.open .burgerLine::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* SLIDING MENU */
+#menu {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #C3C2D0;
+    color: #ffffff;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: fixed;
+    right: -100vw ;
+    z-index: 3000;
+
+    transition: all 0.6s ease;
+}
+#menu > nav {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #666F7A;
+}
+.bar, .navLinks {
+    font-family: 'OpalineRegular';
+}
+#menu > nav > p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    line-height: 20px;
+}
+#menu ul {
+    font-size: 48px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media only screen and (max-width:600px){
+    #menu > nav {
+        width: 80%;
+    }
+}
+
+/* MENU TRANSITION IN */
+#menu.in {
+    right: 0vw ;
+}
+
+/* MENU LINKS */
+.navLinks {
+    margin-left: 10px ;
+}
+#menu > nav > p {
+    margin-left: 24px ;
+}
+.slideLink {
+    animation: fadeInMenu 0.6s ease-in-out forwards;
+}
+.slideLinkBack {
+    animation: fadeOutMenu 0.6s ease-in-out forwards;
+}
+@keyframes fadeInMenu {
+    from{
+        margin-left: 10px;
+    }
+    to{
+        margin-left: 24px;
+    }    
+}
+@keyframes fadeOutMenu {
+    from{
+        margin-left: 24px;
+    }
+    to{
+        margin-left: 10px;
+    }    
+}
+
+
+/* THE BAR NEXT TO THE MENU LINK */
+.bar {
+    opacity: 0;
+}
+.slideLinkBar {
+    animation: fadeInbar 0.6s ease-in-out forwards;
+}
+.slideLinkBarBack {
+    animation: fadeOutbar 0.6s ease-in-out forwards;
+}
+@keyframes fadeInbar {
+    from{
+        opacity: 0;
+        margin-left: 0px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 10px;
+    }    
+}
+@keyframes fadeOutbar {
+    from{
+        opacity: 1;
+        margin-left: 10px;
+    }
+    to{
+        opacity: 0;
+        margin-left: 0px;
+    }    
+}

@@ -1,0 +1,15 @@
+{
+  "name": "inm120_template",
+  "version": "1.0.0",
+  "description": "INM120 Template",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "Kosar Kardan",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

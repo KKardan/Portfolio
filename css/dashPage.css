@@ -1,0 +1,331 @@
+#dashPage{
+    width: 100vw;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: -100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    transition: all 0.6s ease;
+}
+#dashPage.slideIn {
+    left: 0vw;
+}
+#dashPageHero{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFCB77;
+    
+}
+#dashPageHero header {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    left: 50px;
+    bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+#dashPageHero header > h1 {
+    width: 100%;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #ffffff;
+}
+#dashPageHero header > h2{
+    width: 100%;
+    font-family: 'OpalineRegular';
+    font-size: 20px;
+    color: #ffffff;
+}
+#dashLaptop{
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(../assets/images/DashboardBG.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width:1330px) {
+    #dashLaptop{
+        background-position: -80px 0;
+    }
+}
+@media only screen and (max-width:1110px) {
+    #dashLaptop{
+        background-position: -80px 0;
+    }
+}
+@media only screen and (max-width:760px) {
+    #dashLaptop{
+        background-position: -200px 0;
+    }
+}
+@media only screen and (max-width:480px) {
+    #dashLaptop{
+        background-position: -250px 0;
+        width: 100%;
+        height: 80%;
+    }
+    #dashPageHero header {
+        left: 50px;
+        bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:600px){
+
+    #dashcodeIntro h3 {
+        margin-top: 80px;
+        margin-bottom: 40px;
+}
+}
+
+
+
+
+
+
+
+#dashIntro h3 {
+    width: 280px;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #586470;
+    border-bottom: 2px solid #586470;
+    margin-top:90px;
+    margin-bottom: 90px;
+}
+#dashStyleGuide > p,
+#roboPrototype > p,
+#dashPrototype_1 > p{
+    width: 85%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #586470;
+    text-align: left;
+}
+
+#dashIntro p {
+    width: 75vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 100;
+    margin-top: 30px;
+    color: #586470;
+}
+@media only screen and (max-width:600px){
+    #dashIntro p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+#dashIntro span {
+    font-weight: 600;
+}
+@media only screen and (max-width:600px){
+    #roboResearchBox > p,
+    #roboTargetText > p,
+    #roboPersonaText > p,
+    #roboPrototype > p,
+    #dashIntro p,
+    #dashPrototype_1 > p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #dashIntro h3 {
+        margin-top: 80px;
+        margin-bottom: 40px;
+}
+}
+
+@media screen and (max-width:550px) {
+    #dashPageHero header > h1 {
+        font-size: 50px;
+    }
+    #dashIntro h3 {
+        font-size: 40px;
+        width: 190px;
+    }
+    .individualprojectSectionTitle > h3{
+        font-size: 40px;
+        width: 185px;
+    }
+    #dashIntro p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+
+.testingBox {
+    width: 78vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 3;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+
+
+
+
+
+#dashPersonaText,
+#dashTestText{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+#dashPersonaText, #dashTestText {
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+
+#dashPersonaText > p,
+#dashTestText > p{
+    width: 85%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #586470;
+    text-align: left;
+}
+@media only screen and (max-width:600px){
+    #dashPersonaText > p,
+    #roboPrototype > p,
+    #dashTestText > p{
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+#dashPersona figure,
+#dashPersonaInfo figure{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+#dashPersona figure {
+    background-image: url(../assets/images/DashboardPersona.png);
+}
+#dashPersonaInfo figure {
+    background-image: url(../assets/images/DashboardPersonaInfo.png);
+}
+
+@media only screen and (min-width:1065px) and (max-width:1608px) {
+    #dashPersonaText{
+        padding-left: 0;
+    }
+}
+
+
+
+#dashStyleGuide > h3 {
+    width: 81%;
+}
+
+
+#dashStyleGuideImg {
+    width: 810px;
+    height: 810px;
+    background-image: url(../assets/images/DashboardStyleGuide.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1608px) {
+    #dashStyleGuide,
+    #dashPrototype{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 25px;
+    }
+    
+}
+@media only screen and (max-width:1064px) {
+    #dashStyleGuideImg{
+       width: 405px;
+       height:2400px;
+       background-image: url(../assets/images/DashboardStyleGuideV.png);
+    }
+}
+
+@media only screen and (max-width:550px) {
+    #dashStyleGuideImg{
+       width: 320px;
+       height:2000px;
+    }
+    #dashStyleGuide > h3,
+    #dashStyleGuide > p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    
+    #dashStyleGuide > h3{
+        font-size: 40px;
+        width: 220px; 
+    }
+    #dashStyleGuide > p {
+        width: 80%;
+        font-size: 14px;
+        line-height: 18px; 
+        text-align: center;
+    }
+    /* #dashTestText > p  {
+        font-size: 14px;
+        line-height: 18px; 
+    } */
+}
+
+
+#dashPrototype_1 > a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+#dashPrototype_1 figure {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/DashboardPrototype.png);
+}
+#dashStyleGuide,
+#dashPrototype {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+}

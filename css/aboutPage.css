@@ -1,0 +1,355 @@
+
+#aboutPage {
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    color:#586470;
+
+    transition: all 0.6s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#aboutPage.slideIn {
+    left: 0vw;
+}
+#aboutPage.slideOut {
+    left: -100vw;
+}
+/* HERO SECTION */
+#aboutHero {
+    width: 100vw;
+    height: 100vh;
+    background-color: #586470;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#aboutHero > h1{
+    width: 62vw;
+    height: auto;
+
+    text-align: center;
+    font-family: 'OpalineRegular';
+    font-size: 4.2vw;
+    
+    color: #fff;
+}
+@media only screen and (max-width:600px){
+    #aboutHero > h1{
+        width: 50vw;
+        font-size: 8vw;
+    }
+}
+
+
+#aboutIntro {
+    width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12.5vw;
+}
+#aboutIntro > div {
+    width: 75vw;
+    display: flex;
+    justify-content: flex-start;
+}
+@media only screen and (max-width:600px){
+    #aboutIntro > div {
+        justify-content: center;
+    }
+}
+
+#aboutIntro h3 {
+    width: 280px;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #586470;
+    border-bottom: 2px solid #586470;
+    margin-bottom: 3.5vw;
+}
+#aboutIntro p {
+    width: 75vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 100;
+    margin-top: 30px;
+    color: #586470;
+}
+@media only screen and (max-width:600px){
+    #aboutIntro p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
+#aboutIntro p br {
+    margin: 20px 0;
+}
+.aboutButton {
+    width: 375px;
+    height: 89px;
+
+    background-color: #fff;
+    border: 2px solid #586470;
+
+    font-family: 'OpalineRegular';
+    color: #586470;
+    font-size: 48px;
+
+    margin-top: 90px;
+}
+
+
+@media only screen and (max-width:1589px) {
+
+    #blank{
+        order: 7;
+        /* display: none; */
+    }
+}
+
+
+.expertise {
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.expertiseBox {
+    width: 78vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 3; 
+
+    row-gap: 20px;
+    column-gap: 20px;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+@media only screen and (min-width:2200px) {
+    .overviewBox {
+        width: 60vw;
+    }
+}
+
+.expertiseSectionTitle {
+    width: 405px;
+    height: 405px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+@media only screen and (max-width:900px) {
+    .expertiseSectionTitle {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:1050px) {
+    .expertiseSectionTitle {
+        height: 100px;
+    }
+}
+.expertiseSectionTitle > h3 {
+    width: 65%;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #586470;
+    border-bottom: 2px solid #586470;
+}
+.expertiseFrame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #586470;
+}
+.expertiseItem{
+    width: 405px;
+    height: 405px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid #586470;
+    background-color: #C3C2D000;
+    transition: all 0.6s ease;
+}
+/* EXPERTIES CARD TRANSITION */
+.expertiseItem.hovered {
+    background-color: #c3c2d035;
+}
+
+#blank {
+    background-color: #fff;
+    border: none;
+}
+.expertiesIcon {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#uxImage.scaleUp,
+#webImage.scaleUp,
+#motionImage.scaleUp,
+#gameImage.scaleUp {
+    transform: scale(1.1);
+}
+
+.expertiseItem h3{
+    width: 73%;
+    font-weight: 200;    
+    font-family: 'OpalineRegular';
+    font-size: 35px;
+    text-align: center;
+}
+.expertiseItem p{
+    width: 73%;
+    font-weight: 200;
+    font-size: 20;
+    line-height: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.expertiseItem figure {
+    width: 90%;
+    height: 90%;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: all 0.6s ease;
+}
+
+#uxImage {
+    background-image: url(../assets/images/ux.png);
+}
+#webImage {
+    background-image: url(../assets/images/web.png);
+}
+#motionImage {
+    background-image: url(../assets/images/motion.png);
+}
+#gameImage {
+    background-image: url(../assets/images/game.png);
+}
+
+
+
+/* SKILLS SECTION */
+#skills {
+    width: 100vw;
+    height: 800px;
+
+    display: flex;
+    justify-content: center;
+    background-color: #586470;
+}
+#skillBox {
+    width: 78vw;
+}
+#skillsTitle{
+    color: #fff;
+    width: 165px;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    border-bottom: 2px solid #fff;
+
+    margin-top: 90px;
+}
+#skillsAccordion {
+    width: 78vw;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position:absolute;
+    margin-top:60px
+}
+#accordion {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+ }
+#accordion h1 {
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 500;
+    color:#ffffff;
+}
+.arrow {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+}
+
+#accordion p {
+    color:#355760;
+    line-height: 1.2vw;
+}
+
+#accordion dt {
+    width: 100%;
+    box-sizing: border-box;
+    height: 70px;
+    font-size: 35px;
+    font-family: 'OpalineRegular';
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#accordion dd {
+    width: 100%;
+    height: 300px;
+
+    box-sizing: border-box;
+    padding: 40px;
+
+    color: #ffffff;
+    display: none;
+    background-color: #666F7A;
+}
+
+#accordion dd ul  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}

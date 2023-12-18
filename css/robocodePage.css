@@ -1,0 +1,766 @@
+#robocodePage{
+    width: 100vw;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: -100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    transition: all 0.6s ease;
+}
+#robocodePage.slideIn {
+    left: 0vw;
+}
+#robocodePageHero{
+    width: 100vw;
+    height: 100vh;
+    background-color: #586470;
+    
+}
+#robocodePageHero header {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    left: 50px;
+    bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+#robocodePageHero header > h1 {
+    width: 100%;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #ffffff;
+}
+#robocodePageHero header > h2{
+    width: 100%;
+    font-family: 'OpalineRegular';
+    font-size: 20px;
+    color: #ffffff;
+}
+#robocodeLaptop{
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(../assets/images/RoboCodeBG.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width:1330px) {
+    #robocodeLaptop{
+        background-position: -80px 0;
+    }
+}
+@media only screen and (max-width:1110px) {
+    #robocodeLaptop{
+        background-position: -80px 0;
+    }
+}
+@media only screen and (max-width:760px) {
+    #robocodeLaptop{
+        background-position: -200px 0;
+    }
+}
+@media only screen and (max-width:480px) {
+    #robocodeLaptop{
+        background-position: -250px 0;
+        width: 100%;
+        height: 80%;
+    }
+    #robocodePageHero header {
+        left: 50px;
+        bottom: 50px;
+    }
+}
+.testingBox {
+    width: 78vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 3;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+#robocodeIntro h3 {
+    width: 280px;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #586470;
+    border-bottom: 2px solid #586470;
+    margin-top:90px;
+    margin-bottom: 90px;
+}
+#robocodeIntro p {
+    width: 75vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 100;
+    margin-top: 30px;
+    color: #586470;
+}
+@media only screen and (max-width:600px){
+    #robocodeIntro p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+#robocodeIntro span {
+    font-weight: 600;
+}
+
+
+/* BLOCKS AREA */
+#roboResearchBox,
+#roboTargetText,
+#roboPersonaText,
+#roboTestText,
+#roboPrototype,
+#roboStyleGuide {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#roboTargetText,
+#roboPersonaText,
+#roboTestText,
+#roboResearchBox{
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+.individualprojectSectionTitle > h3 {
+    width: 65%;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #586470;
+    border-bottom: 2px solid #586470;
+}
+
+
+#roboResearchBox > p,
+#roboTargetText > p,
+#roboPersonaText > p,
+#roboTestText > p,
+#roboStyleGuide > p,
+#roboPrototype > p{
+    width: 85%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #586470;
+    text-align: left;
+}
+@media only screen and (max-width:600px){
+    #roboResearchBox > p,
+    #roboTargetText > p,
+    #roboPersonaText > p,
+    #roboPrototype > p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #robocodeIntro h3 {
+        margin-top: 80px;
+        margin-bottom: 40px;
+}
+}
+#roboReseach_1 figure,
+#roboReseach_2 figure,
+#roboTarget figure,
+#roboPersona figure,
+#roboPersonaInfo figure,
+#roboTestImg figure {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+
+#roboReseach_1 figure {
+    background-image: url(../assets/images/RoboCodeInsight_1.png);
+}
+#roboReseach_2 figure {
+    background-image: url(../assets/images/RoboCodeInsight_2.png);
+}
+#roboTarget figure{
+    background-image: url(../assets/images/RoboCodeTarget.png);
+}
+
+#roboTargetText,
+#roboTestText {
+    width: 830px;
+}
+@media only screen and (max-width:1064px) {
+    #roboTargetText,
+    #roboTestText {
+        width: 405px;
+        height: 830;
+    }
+    .testingBox {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .expertiseBox {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width:1064px) and (max-width:1608px) {
+    #roboTargetText,
+    #roboTestText {
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+    }
+    
+}
+.individualprojectSectionTitle,
+.individualProjectItem{
+    width: 405px;
+    height: 405px;
+    overflow: hidden;
+}
+.individualProjectItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+@media only screen and (max-width:550px) {
+    .individualprojectSectionTitle,
+    .individualProjectItem{
+    width: 320px;
+    height: 320px;
+    }
+}
+#roboPersona figure {
+    background-image: url(../assets/images/RoboCodePersona.png);
+}
+#roboPersonaInfo figure {
+    background-image: url(../assets/images/RoboCodePersonaInfo.png);
+}
+
+@media only screen and (min-width:1065px) and (max-width:1608px) {
+    #roboTargetText,
+    #roboPersonaText,
+    #roboTestText{
+        padding-left: 0;
+    }
+}
+
+
+/* individualProjectJourney */
+.individualProjectJourney {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: #586470;
+
+    box-sizing: border-box;
+    padding: 50px 0;
+}
+.individualProjectJourney > article{
+    width: 405px;
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@media only screen and (min-width:1064px) and (max-width:1608px) {
+    .individualProjectJourney > article{
+        width: 810px;
+        height: 250px;
+    }
+}
+.individualProjectJourney > figure {
+    width: 810px;
+    height: 405px;
+    background-image: url(../assets/images/RoboCodeJourneyV.png);
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (max-width:550px) {
+    .individualProjectJourney > article{
+    width: 320px;
+    height: 320px;
+    }
+
+}
+.individualProjectJourney h3 {
+    width: 28%;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+.individualProjectJourney p{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-align: left;
+}
+@media only screen and (max-width:600px){
+    .individualProjectJourney p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media only screen and (max-width:1064px) {
+    .individualProjectJourney {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .individualProjectJourney > figure {
+        width: 449px;
+        height: 825px;
+        background-image: url(../assets/images/RoboCodeJourneyV.png);
+        background-size: cover;
+    }
+    .individualProjectJourney > article > p {
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width:550px) {
+    .individualProjectJourney > figure {
+        width: 320px;
+        height: 590px;
+        background-image: url(../assets/images/RoboCodeJourneyV.png);
+        background-size: cover;
+    }
+}
+
+
+
+/* TASK SECTION */
+#Robotasks {
+    width: 100vw;
+    height: 1050px;
+    display: flex;
+    justify-content: center;
+    background-color: #586470;
+}
+#RobotasksBox {
+    width: 78vw;
+}
+#RobotasksTitle{
+    color: #fff;
+    width: 165px;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    border-bottom: 2px solid #fff;
+
+    margin-top: 90px;
+}
+#RobotasksAccordion {
+    width: 78vw;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position:absolute;
+    margin-top:60px
+}
+@media only screen and (max-width:550px) {
+    #RobotasksAccordion,#RobotasksBox {
+        width: 65vw;
+    }
+}
+
+#accordionRobo{
+    width: 100%;
+}
+
+#accordionRobo p {
+    color:#355760;
+    line-height: 1.2vw;
+}
+
+#accordionRobo dt {
+    width: 100%;
+    box-sizing: border-box;
+    height: 70px;
+    font-size: 35px;
+    font-family: 'OpalineRegular';
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#accordionRobo dd {
+    width: 100%;
+    height: 560px;
+
+    box-sizing: border-box;
+    padding: 40px;
+
+    color: #ffffff;
+    display: none;
+    background-color: #666F7A;
+}
+
+#accordionRobo dd p  {
+    width: 75%;
+    margin: 20px auto 40px;
+        
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: #ffffff;
+    text-align: center;
+    line-height: 28px;  
+}
+
+#roboTask_1,
+#roboTask_2,
+#roboTask_3{
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 46vw;
+    height: 19vw;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#roboTask_1{
+    background-image: url(../assets/images/RoboCodeTask_1.png);
+}
+#roboTask_2{
+    background-image: url(../assets/images/RoboCodeTask_2.png);
+}
+#roboTask_3{
+    background-image: url(../assets/images/RoboCodeTask_3.png);
+}
+
+#roboTestImg figure {
+    background-image: url(../assets/images/RoboCodeTesting.png);
+}
+
+#roboChange_1,
+#roboChange_2,
+#roboChange_3 {
+    background-color: #586470;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+#roboChange_1 > h3,
+#roboChange_2 > h3,
+#roboChange_3 > h3 {
+    width: 38%;
+    font-size: 30px;
+    font-family: 'OpalineRegular';
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+}
+#roboChange_3 > h3{
+    width: 50%;
+}
+#roboStyleGuide > h3 {
+    width: 81%;
+}
+
+#roboChange_1 > p,
+#roboChange_2 > p,
+#roboChange_3 > p{
+    width: 84%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+#roboStyleGuideImg {
+    width: 810px;
+    height: 810px;
+    background-image: url(../assets/images/RoboCodeStyleGuide.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1608px) {
+    #roboStyleGuide{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 25px;
+    }
+}
+@media only screen and (max-width:1064px) {
+    #roboStyleGuideImg{
+       width: 405px;
+       height:2400px;
+       background-image: url(../assets/images/RoboCodeStyleGuideV.png);
+    }
+}
+@media only screen and (max-width:550px) {
+    #roboStyleGuideImg{
+       width: 320px;
+       height:2000px;
+    }
+    #roboStyleGuide > h3,
+    #roboStyleGuide > p {
+        width: 100%;
+    }
+}
+
+/* Prototype */
+#roboPrototype_1 > a,
+#roboPrototype_2 > a,
+#roboPrototype_3 > a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+#roboPrototype_1 figure,
+#roboPrototype_2 figure,
+#roboPrototype_3 figure {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#roboPrototype_1 figure,
+#roboPrototype_2 figure,
+#roboPrototype_3 figure{
+    background-image: url(../assets/images/RoboCodePrototype.png);
+}
+
+@media only screen and (max-width:1608px) {
+    .emptyBlock{
+        display: none;
+    }
+    #roboPrototype{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+@media only screen and (max-width:1064px) {
+    #roboPrototype{
+        align-items: center;
+    }
+    #roboPrototype > h3,
+    #roboPrototype > p{
+        width: 75%;
+        text-align: center;
+    }
+}
+
+.individualProjectConclusion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #586470;
+    box-sizing: border-box;
+    padding:50px;
+}
+.individualProjectConclusion div {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.individualProjectConclusion h3 {
+    width: 340px;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+.individualProjectConclusion p{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-align: left;
+}
+@media screen and (max-width:1064px) {
+    .individualProjectConclusion div {
+        align-items: center;
+        text-align: center;
+    }
+    .individualProjectConclusion p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #robocodePageHero header > h1 {
+        font-size: 50px;
+    }
+    #robocodeIntro h3 {
+        font-size: 40px;
+        width: 190px;
+    }
+    .individualprojectSectionTitle > h3{
+        font-size: 40px;
+        width: 185px;
+    }
+    #robocodeIntro p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .testingBox {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    #roboResearchBox > p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #roboResearchBox,
+    #roboTargetText,
+    #roboPersonaText{
+        padding: 0;
+        justify-content: center;
+    }
+    .individualProjectJourney h3{
+        font-size: 40px;
+        width: 150px;  
+    }
+    #RobotasksTitle{
+        font-size: 40px;
+        width: 110px; 
+    }
+    #accordionRobo dd{
+        padding-left: 0;
+        padding-right: 0;
+        height: 300px;
+    }
+    #accordionRobo dt {
+        font-size: 22px;
+    }
+    #accordionRobo dd p{
+        width: 80%;
+        font-size: 14px;
+        line-height: 18px; 
+    }
+    .individualprojectSectionTitle > h3,
+    .individualprojectSectionTitle > h3{
+        font-size: 40px;
+        width: 130px; 
+    }
+    .individualProjectJourney > article,
+    .individualprojectSectionTitle{
+        justify-content: center;
+    }
+    #roboResearchBox > p, 
+    #roboTargetText > p, 
+    #roboPersonaText > p, 
+    #roboPrototype > p,
+    .individualProjectJourney > article > p,
+    #roboTestText > p  {
+        font-size: 14px;
+        line-height: 18px; 
+    }
+    #roboChange_1 > h3, #roboChange_2 > h3, #roboChange_3 > h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+    #roboChange_3 > h3{
+        width: 150px;
+    }
+    #roboChange_1 > p, #roboChange_2 > p, #roboChange_3 > p {
+        font-size: 14px;
+        line-height: 18px; 
+    }
+    #roboStyleGuide > h3{
+        font-size: 40px;
+        width: 220px; 
+    }
+    #roboStyleGuide > p {
+        width: 80%;
+        font-size: 14px;
+        line-height: 18px; 
+        text-align: center;
+    }
+    #roboPrototype > h3{
+        font-size: 40px;
+        width: 220px;  
+    }
+    .individualProjectConclusion div{
+        width: 100%;
+    }
+    .individualProjectConclusion h3{
+        font-size: 40px;
+        width: 230px; 
+    }
+    .individualProjectConclusion p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 18px; 
+    }
+    #credit{
+        font-size: 14px;
+    }
+    footer{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 25px;
+    }
+   
+}
+@media only screen and (max-width:900px) {
+    #credit{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:750px) {
+    #credit{
+        font-size: 14px;
+    }
+}
+
+

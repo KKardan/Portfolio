@@ -1,0 +1,803 @@
+#wonderPage{
+    width: 100vw;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: -100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    transition: all 0.6s ease;
+}
+#wonderPage.slideIn {
+    left: 0vw;
+}
+#wonderPageHero{
+    width: 100vw;
+    height: 100vh;
+    background-color: #007E8C;
+    
+}
+#wonderPageHero header {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    left: 50px;
+    bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+#wonderPageHero header > h1 {
+    width: 100%;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #ffffff;
+}
+#wonderPageHero header > h2{
+    width: 100%;
+    font-family: 'OpalineRegular';
+    font-size: 20px;
+    color: #ffffff;
+}
+#wonderLaptop{
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(../assets/images/WonderBG.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width:1330px) {
+    #wonderLaptop{
+        background-position: -80px 0;
+    }
+}
+@media only screen and (max-width:1110px) {
+    #wonderLaptop{
+        background-position: -80px 0;
+    }
+}
+@media only screen and (max-width:760px) {
+    #wonderLaptop{
+        background-position: -200px 0;
+    }
+}
+@media only screen and (max-width:480px) {
+    #wonderLaptop{
+        background-position: -250px 0;
+        width: 100%;
+        height: 80%;
+    }
+    #wonderPageHero header {
+        left: 50px;
+        bottom: 50px;
+    }
+}
+.testingBox {
+    width: 78vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 3;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+#wonderIntro h3 {
+    width: 280px;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #586470;
+    border-bottom: 2px solid #586470;
+    margin-top:90px;
+    margin-bottom: 90px;
+}
+#wonderIntro p {
+    width: 75vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 100;
+    margin-top: 30px;
+    color: #586470;
+}
+@media only screen and (max-width:600px){
+    #wonderIntro p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+#wonderIntro span {
+    font-weight: 600;
+}
+
+
+/* BLOCKS AREA */
+#wonderResearchBox,
+#wonderTargetText,
+#wonderPersonaText,
+#wonderPersonaText_2,
+#wonderTestText,
+#wonderPrototype,
+#wonderStyleGuide {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#wonderTargetText,
+#wonderPersonaText,
+#wonderPersonaText_2,
+#wonderTestText,
+#wonderResearchBox{
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+
+.individualprojectSectionTitle > h3 {
+    width: 65%;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #586470;
+    border-bottom: 2px solid #586470;
+}
+
+
+#wonderResearchBox > p,
+#wonderTargetText > p,
+#wonderPersonaText > p,
+#wonderPersonaText_2 > p,
+#wonderTestText > p,
+#wonderStyleGuide > p,
+#wonderPrototype > p{
+    width: 85%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #586470;
+    text-align: left;
+}
+@media only screen and (max-width:600px){
+    #wonderResearchBox > p,
+    #wonderTargetText > p,
+    #wonderPersonaText > p,
+    #wonderPersonaText_2 > p,
+    #wonderPrototype > p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #wonderIntro h3 {
+        margin-top: 80px;
+        margin-bottom: 40px;
+}
+}
+#wonderResearch_1 figure,
+#wonderResearch_2 figure,
+#wonderTarget figure,
+#wonderPersona figure,
+#wonderPersona_2 figure,
+#wonderPersonaInfo figure,
+#wonderPersonaInfo_2 figure,
+#wonderTestImg figure {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#wonderResearch_1 figure {
+    background-image: url(../assets/images/WonderInsight_1.png);
+}
+#wonderResearch_2 figure {
+    background-image: url(../assets/images/WonderInsight_2.png);
+}
+#wonderTarget figure{
+    background-image: url(../assets/images/WonderTarget_1.png);
+}
+
+#wonderTargetText,
+#wonderTestText {
+    width: 830px;
+}
+@media only screen and (max-width:1064px) {
+    #wonderTestText{
+        width: 405px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .testingBox {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .expertiseBox {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+
+
+@media only screen and (max-width:1064px) {
+    #wonderTargetText{
+        width: 405px;
+        height: 810px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+} 
+
+
+
+
+
+
+@media only screen and (min-width:1064px) and (max-width:1608px) {
+    #wonderTargetText,
+    #wonderTestText {
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+    }
+    
+}
+.individualprojectSectionTitle,
+.individualProjectItem{
+    width: 405px;
+    height: 405px;
+    overflow: hidden;
+}
+.individualProjectItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+@media only screen and (max-width:550px) {
+    .individualprojectSectionTitle,
+    .individualProjectItem{
+    width: 320px;
+    height: 320px;
+    }
+}
+#wonderPersona figure {
+    background-image: url(../assets/images/WonderPersona_1.png);
+}
+#wonderPersona_2 figure {
+    background-image: url(../assets/images/WonderPersona_2.png);
+}
+#wonderPersonaInfo figure {
+    background-image: url(../assets/images/WonderPersonaInfo_1.png);
+}
+#wonderPersonaInfo_2 figure {
+    background-image: url(../assets/images/WonderPersonaInfo_2.png);
+}
+
+@media only screen and (min-width:1065px) and (max-width:1608px) {
+    #wonderTargetText,
+    #wonderPersonaText,
+    #wonderPersonaText_2,
+    #wonderTestText{
+        padding-left: 0;
+    }
+}
+
+
+/* individualProjectJourney */
+.individualProjectJourney {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: #586470;
+
+    box-sizing: border-box;
+    padding: 100px 0;
+}
+.individualProjectJourney > article{
+    width: 405px;
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@media only screen and (min-width:1064px) and (max-width:1608px) {
+    .individualProjectJourney > article{
+        width: 810px;
+        height: 250px;
+    }
+}
+.individualProjectJourney > figure {
+    width: 810px;
+    height: 405px;
+    background-image: url(../assets/images/RoboCodeJourney.png);
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (max-width:550px) {
+    .individualProjectJourney > article{
+    width: 320px;
+    height: 320px;
+    }
+
+}
+.individualProjectJourney h3 {
+    width: 28%;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+.individualProjectJourney p{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-align: left;
+}
+@media only screen and (max-width:600px){
+    .individualProjectJourney p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media only screen and (max-width:1064px) {
+    .individualProjectJourney {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .individualProjectJourney > figure {
+        width: 449px;
+        height: 825px;
+        background-image: url(../assets/images/RoboCodeJourneyV.png);
+        background-size: cover;
+    }
+    .individualProjectJourney > article > p {
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width:550px) {
+    .individualProjectJourney > figure {
+        width: 320px;
+        height: 590px;
+        background-image: url(../assets/images/RoboCodeJourneyV.png);
+        background-size: cover;
+    }
+}
+
+
+
+/* TASK SECTION */
+#wondertasks {
+    width: 100vw;
+    height: 1050px;
+    display: flex;
+    justify-content: center;
+    background-color: #586470;
+}
+#wondertasksBox {
+    width: 78vw;
+}
+#wondertasksTitle{
+    color: #fff;
+    width: 165px;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    border-bottom: 2px solid #fff;
+
+    margin-top: 90px;
+}
+#wondertasksAccordion {
+    width: 78vw;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position:absolute;
+    margin-top:60px
+}
+@media only screen and (max-width:550px) {
+    #wondertasksAccordion,#wondertasksBox {
+        width: 65vw;
+    }
+}
+
+#accordionWonder{
+    width: 100%;
+}
+
+#accordionWonder p {
+    color:#355760;
+    line-height: 1.2vw;
+}
+
+#accordionWonder dt {
+    width: 100%;
+    box-sizing: border-box;
+    height: 70px;
+    font-size: 35px;
+    font-family: 'OpalineRegular';
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#accordionWonder dd {
+    width: 100%;
+    height: 560px;
+
+    box-sizing: border-box;
+    padding: 40px;
+
+    color: #ffffff;
+    display: none;
+    background-color: #666F7A;
+}
+
+#accordionWonder dd p  {
+    width: 75%;
+    margin: 20px auto 40px;
+        
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: #ffffff;
+    text-align: center;
+    line-height: 28px;  
+}
+
+#wonderTask_1,
+#wonderTask_2,
+#wonderTask_3{
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 46vw;
+    height: 19vw;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#wonderTask_1{
+    background-image: url(../assets/images/WonderTask_1.png);
+}
+#wonderTask_2{
+    background-image: url(../assets/images/WonderTask_2.png);
+}
+
+#wonderTask_3{
+    background-image: url(../assets/images/WonderTask_3.png);
+}
+
+
+#wonderTestImg figure {
+    background-image: url(../assets/images/WonderTesting.png);
+}
+
+#wonderChange_1,
+#wonderChange_2,
+#wonderChange_3 {
+    background-color: #586470;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+#wonderChange_1 > h3,
+#wonderChange_2 > h3,
+#wonderChange_3 > h3 {
+    width: 38%;
+    font-size: 30px;
+    font-family: 'OpalineRegular';
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+}
+#wonderChange_3 > h3{
+    width: 50%;
+}
+#wonderStyleGuide > h3 {
+    width: 81%;
+}
+
+#wonderChange_1 > p,
+#wonderChange_2 > p,
+#wonderChange_3 > p{
+    width: 84%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+#wonderStyleGuideImg {
+    width: 810px;
+    height: 810px;
+    background-image: url(../assets/images/WonderStyleGuide.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1608px) {
+    #wonderStyleGuide{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 25px;
+    }
+}
+@media only screen and (max-width:1064px) {
+    #wonderStyleGuideImg{
+       width: 405px;
+       height:2400px;
+       background-image: url(../assets/images/WonderStyleGuideV.png);
+    }
+}
+@media only screen and (max-width:550px) {
+    #wonderStyleGuideImg{
+       width: 320px;
+       height:2000px;
+    }
+    #wonderStyleGuide > h3,
+    #wonderStyleGuide > p {
+        width: 100%;
+    }
+}
+
+/* Prototype */
+#wonderPrototype_1 > a,
+#wonderPrototype_2 > a,
+#wonderPrototype_3 > a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+#wonderPrototype_1 figure,
+#wonderPrototype_2 figure,
+#wonderPrototype_3 figure {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#wonderPrototype_1 figure,
+#wonderPrototype_2 figure,
+#wonderPrototype_3 figure{
+    background-image: url(../assets/images/WonderPrototype.png);
+}
+
+@media only screen and (max-width:1608px) {
+    .emptyBlock{
+        display: none;
+    }
+    #wonderPrototype{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+@media only screen and (max-width:1064px) {
+    #wonderPrototype{
+        align-items: center;
+    }
+    #wonderPrototype > h3,
+    #wonderPrototype > p{
+        width: 75%;
+        text-align: center;
+    }
+}
+
+.individualProjectConclusion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #586470;
+    box-sizing: border-box;
+    padding:50px;
+}
+.individualProjectConclusion div {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.individualProjectConclusion h3 {
+    width: 340px;
+    font-size: 60px;
+    font-family: 'OpalineRegular';
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+.individualProjectConclusion p{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-align: left;
+}
+@media screen and (max-width:1064px) {
+    .individualProjectConclusion div {
+        align-items: center;
+        text-align: center;
+    }
+    .individualProjectConclusion p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #wonderPageHero header > h1 {
+        font-size: 50px;
+    }
+    #wonderIntro h3 {
+        font-size: 40px;
+        width: 190px;
+    }
+    .individualprojectSectionTitle > h3{
+        font-size: 40px;
+        width: 185px;
+    }
+    #wonderIntro p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .testingBox {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    #wonderResearchBox > p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #wonderResearchBox,
+    #wonderTargetText,
+    #wonderPersonaText{
+        padding: 0;
+        justify-content: center;
+    }
+    .individualProjectJourney h3{
+        font-size: 40px;
+        width: 150px;  
+    }
+    #wondertasksTitle{
+        font-size: 40px;
+        width: 110px; 
+    }
+    #accordionWonder dd{
+        padding-left: 0;
+        padding-right: 0;
+        height: 300px;
+    }
+    #accordionWonder dt {
+        font-size: 22px;
+    }
+    #accordionWonder dd p{
+        width: 80%;
+        font-size: 14px;
+        line-height: 18px; 
+    }
+    .individualprojectSectionTitle > h3,
+    .individualprojectSectionTitle > h3{
+        font-size: 40px;
+        width: 130px; 
+    }
+    .individualProjectJourney > article,
+    .individualprojectSectionTitle{
+        justify-content: center;
+    }
+    #roboResearchBox > p, 
+    #wonderTargetText > p, 
+    #wonderPersonaText > p, 
+    #wonderPrototype > p,
+    .individualProjectJourney > article > p,
+    #wonderTestText > p  {
+        font-size: 14px;
+        line-height: 18px; 
+    }
+    #wonderChange_1 > h3, #wonderChange_2 > h3, #wonderChange_3 > h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+    #wonderChange_3 > h3{
+        width: 150px;
+    }
+    #wonderChange_1 > p, #wonderChange_2 > p, #wonderChange_3 > p {
+        font-size: 14px;
+        line-height: 18px; 
+    }
+    #wonderStyleGuide > h3{
+        font-size: 40px;
+        width: 220px; 
+    }
+    #wonderStyleGuide > p {
+        width: 80%;
+        font-size: 14px;
+        line-height: 18px; 
+        text-align: center;
+    }
+    #wonderPrototype > h3{
+        font-size: 40px;
+        width: 220px;  
+    }
+    .individualProjectConclusion div{
+        width: 100%;
+    }
+    .individualProjectConclusion h3{
+        font-size: 40px;
+        width: 230px; 
+    }
+    .individualProjectConclusion p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 18px; 
+    }
+    #credit{
+        font-size: 14px;
+    }
+    footer{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 25px;
+    }
+   
+}
+@media only screen and (max-width:900px) {
+    #credit{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:750px) {
+    #credit{
+        font-size: 14px;
+    }
+}
+
+
+#wonderTargetText span {
+    font-weight: 600;
+}
